@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background: rgb(212, 212, 212);
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+article.product {
+    background: #fff;
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+
+}
+
+.product figure {
+    background: rgb(255, 208, 0);
+
+
+}
+
+.product figure img {
+
+}
+
+.product figure figcaption {
+    color: rgba(0,0,0,.8);
+
+}
+
+.product aside {
+
+}
+
+.product aside h1 {
+
+}
+
+.product aside h2 {
+
+}
+
+p {
+    color: rgba(0,0,0,.7);
+
+}
+
+button {
+
+}
+
+button:hover {
+
+}
