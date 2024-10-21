@@ -1,14 +1,24 @@
 :root {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-bg: #fff;
+    --secondary-bg: #eeeeee;
 }
 
 nav {
-
+    max-width: 1450;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
 }
 
 nav a {
-
+    background-color: #eeeeee;
+    text-decoration: none;
+    color: #7e7e7e;
+    padding: 1rem 7.52rem;
 }
 nav a:hover {
-
+    background-color: #666666;
+    transition: all 0.3s ease-in-out;
 }
