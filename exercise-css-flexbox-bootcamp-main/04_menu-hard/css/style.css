@@ -1,27 +1,50 @@
 :root {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-bg: #eeeeee;
+    --secondary-bg: #dddddd;
+
+    --primary-text-dark: #8d8d8d;
 }
 
-nav {
-
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-bg);
 }
 
-nav img {
-
+header img {
+    padding-left: 1rem;
+    max-width: 110px;
 }
 
-nav a {
-
+header nav {
+    display: flex;
 }
 
-nav a:hover {
-
+header nav a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--primary-text-dark);
 }
 
-nav a.login {
-
+header nav a:hover {
+    background-color: var(--secondary-bg);
 }
 
-nav a.login:hover {
+header a.login {
+    margin-top: 0.7rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.7rem;
+    padding: 0rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-text-dark);
+    border: 1.5px solid var(--primary-text-dark);
+    border-radius: 5px;
+}
 
+header a.login:hover {
+    background-color: var(--secondary-bg);
 }
