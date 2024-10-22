@@ -3,40 +3,57 @@ body {
     background: rgb(212, 212, 212);
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 article.card {
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
     color: rgba(59, 28, 28, 0.4);
-
-
+    background-color: white;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .card img.close {
-
+    width: 1rem;
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 .card img.profile {
-
+    width: 8.5rem;
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+    border-radius: 100%;
 }
 
 .card h1 {
     color: rgba(0,0,0,.8);
-
-
+    margin-bottom: -0.5rem;
+    font-size: 1.8rem;
+    font-weight: 1000;
 }
 
 .card p {
-
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .card a {
     background: rgba(0,0,0,.8);
     color: #eee;
-    
-
+    border-radius: 30px;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-decoration: none;
 }
 
 .card a:hover {
