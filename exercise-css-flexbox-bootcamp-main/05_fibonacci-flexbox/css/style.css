@@ -12,64 +12,70 @@ body {
 }
 
 article {
-
+    display: flex;
+    width: 150vh;
+    margin-bottom: 2.5rem;
 }
 
 article.reverse {
-    
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 article section {
-    
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom:6rem;
 }
 
 article .box-1 {
     background:rgba(100,0,0,1);
-    
-    
+    flex-grow: 1;
 }
+
 article .box-2 { 
     background:rgba(100,20,0,1);
-
-    
+    flex-grow: 1;
 }
+
 article .box-3 { 
     background:rgba(100,40,0,1);
-
-    
+    flex-grow: 1;
 }
+
 article .box-4 { 
     background:rgba(100,60,0,1);
-
-    
+    flex-grow: 2;    
 }
+
 article .box-5 { 
     background:rgba(100,80,0,1);
-
-    
+    flex-grow: 3;  
 }
+
 article .box-6 { 
     background:rgba(100,100,0,1);
-
-    
+    flex-grow: 5;    
 }
+
 article .box-7 { 
     background:rgba(100,120,0,1);
-
-    
+    flex-grow: 8;    
 }
+
 article .box-8 { 
     background:rgba(100,140,0,1);
-
-    
+    flex-grow: 13;    
 }
+
 article .box-9 { 
     background:rgba(100,160,0,1);
-
-    
+    flex-grow: 21;    
 }
+
 article .box-10 { 
     background:rgba(100,180,0,1);
-
-    
+    flex-grow: 34;
 }
