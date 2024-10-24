@@ -1,52 +1,87 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: rgb(212, 212, 212);
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 article.product {
+    width: 65vw;  
     background: #fff;
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
-
+    display: flex; 
+    flex-direction: row;
 }
 
 .product figure {
     background: rgb(255, 208, 0);
-
-
+    display:flex;
+    flex-direction: column;
+    /* Makes figure & aside same width */
+    flex:1; 
+    /* Makes figure in square but aside will affect the height */
+    aspect-ratio: 1;
 }
 
 .product figure img {
-
+    Margin: auto;
+    width: 80%;
 }
 
+/* Price-tag */
 .product figure figcaption {
     color: rgba(0,0,0,.8);
+    font-size: 2rem;
+    align-self: flex-end;
+    padding: 0rem 2rem 2rem 0rem;
 
 }
 
 .product aside {
-
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
 }
 
 .product aside h1 {
-
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 1.8rem;
 }
 
 .product aside h2 {
-
+    font-size: 1.7rem;
+    font-weight: 600;
 }
 
 p {
     color: rgba(0,0,0,.7);
-
+    font-size: 1.1rem;
+    padding-top: 1.4rem;
+    font-weight: 600;
+    padding-right: 1rem;
 }
 
 button {
-
+    background: #fff;
+    align-self: flex-end;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-top: 12rem;
 }
 
 button:hover {
-
+    background-color: #eeeeee;
+    transition: .2s ease-in-out;
 }
