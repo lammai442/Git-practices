@@ -1,0 +1,125 @@
+/* Allmän styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Header-styling */
+.header-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex; /* Använd flexbox för att arrangera header-elementen */
+  justify-content: space-between; /* Fördela utrymmet jämnt mellan barnen (t.ex. titel och nav) */
+  align-items: center; /* Centrera element vertikalt */
+}
+
+.nav-container {
+  display: flex; /* Använd flexbox för att arrangera navigationslänkar */
+  gap: 15px; /* Utrymme mellan varje navigationslänk */
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Flexbox-demo sektion */
+.flex-demo .flex-container {
+  display: flex; /* Skapa en flexcontainer för boxarna */
+  justify-content: space-around; /* Fördela utrymmet jämnt runt varje box */
+  align-items: center; /* Centrera boxarna vertikalt inom containern */
+  padding: 20px;
+  background-color: #e6e6e6;
+  margin: 20px;
+}
+
+.box {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 10px; /* Utrymme runt varje box */
+  flex: 1; /*Låt varje box växa lika mycket för att fylla containern */
+}
+
+/* Formulär-sektion */
+.form-container {
+  padding: 20px;
+  background-color: #e6e6e6;
+  margin: 20px;
+  display: flex; /* Använd flexbox för att centrera formulärcontainern */
+  justify-content: center; /* Centrera formuläret horisontellt */
+  align-items: center; /* Centrera formuläret vertikalt */
+}
+
+form {
+  display: flex; /* Använd flexbox för att arrangera formulärelementen */
+  flex-direction: column; /* Arrangera formulärelementen i en kolumn */
+  gap: 10px; /* Utrymme mellan varje formulärelement */
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555; /* Ändra knappfärg vid hovring */
+}
+
+/* Ytterligare flexbox-exempel */
+.additional-flex .add-flex-container {
+  padding: 20px;
+  background-color: #d9d9d9;
+  margin: 20px;
+  gap: 15px; /* Utrymme mellan varje element */
+  display: flex; /* Skapa en flexcontainer för alternativa boxar */
+  flex-direction: column; /* Arrangera elementen i en kolumn */
+  align-items: stretch; /* Sträck elementen för att fylla container-bredden */
+}
+
+.box-alternate {
+  background-color: #ff9800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Footer-styling */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex; /* Använd flexbox för att arrangera footer-elementen */
+  justify-content: space-between; /* Fördela utrymmet jämnt mellan barnen (t.ex. text och sociala länkar) */
+  align-items: center; /* Centrera element vertikalt */
+}
+
+.social-links {
+  display: flex; /* Använd flexbox för att arrangera sociala länkar */
+  gap: 15px; /* Utrymme mellan varje social länk */
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}

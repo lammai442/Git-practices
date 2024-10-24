@@ -21,6 +21,17 @@ header nav {
     display: flex;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li {
+    gap:1rem;
+}
+
 header nav a {
     padding: 1rem 1.5rem;
     text-decoration: none;

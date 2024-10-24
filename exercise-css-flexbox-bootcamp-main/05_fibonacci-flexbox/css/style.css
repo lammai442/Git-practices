@@ -18,7 +18,6 @@ article {
 }
 
 article.reverse {
-    display: flex;
     flex-direction: row-reverse;
 }
 

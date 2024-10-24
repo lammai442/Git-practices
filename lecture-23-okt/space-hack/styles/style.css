@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BASE */
+
+:root {
+    --black-purple: #2E2D31;
+    --darkest-purple: #220B5E;
+    --dark-purple: #3B1D98;
+    --purple: #513779;
+    --light-purple: #7654B4;
+    --lightest-purple: #967ECB;
+    --footer-bg-purple: #654C8C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* GENERIC STYLING */
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p, button {
+    font-family: "Inconsolata", monospace;
+}
+
+/* COLOURING UTILITIES */
+
+.bg-darkest-purple {
+    background-color: var(--darkest-purple);
+}
+
+.bg-dark-purple {
+    background-color: var(--dark-purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.bg-lightest-purple {
+    background-color: var(--lightest-purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-footer-purple { background-color: var(--footer-bg-purple); }
+
+.text-light { color: white; }
+
+/* HEADER SECTION */
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .header-right-container {
+        display: flex;
+        aspect-ratio: 1;
+        flex: 1;
+        flex-direction: column;
+
+        .header-right-container-row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .header-box {
+        flex: 1;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    width: 100%;
+    background-image: url('../assets/astronaut.jpg');
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(34, 11, 94, 0.6);
+        z-index: 1;  
+    }
+
+    h2 {
+        padding: 22rem;
+        text-align: center;
+        font-size: 3.5rem;
+        z-index: 999;
+        position: relative;
+    }
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    .main-section-info-box {
+        flex: 1;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-section-left-container {
+        flex: 1;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        
+        .main-section-left-container-row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .main-section-info-box-lower {
+            height: 50%;
+        }
+    }
+}
+
+/* JOIN US SECTION */
+
+.join-section {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 6rem 4rem;
+
+    .join-left-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            letter-spacing: 1px;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            border: none;
+            color: white;
+            font-weight: 600;
+            align-self: flex-end;
+            border-radius: 999rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #967ECB;
+            }
+        }
+    }
+
+    .join-img-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70%;
+            aspect-ratio: 1;
+            border-radius: 999rem;
+        }
+    }
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1;
+    padding: 4rem 2rem;
+    color: white;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-article {
+        flex: 1;
+        text-align: center;
+
+        h3 {
+            margin-bottom: .5rem;
+        }
+    }
+}

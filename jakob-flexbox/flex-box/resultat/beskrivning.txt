@@ -1,0 +1,3 @@
+Bilderna visar en och samma sida. Tanken är att träna på flexbox och hur ni kan placera ut element. 
+Ni får givetvis styla det andra precis som ni vill.
+I slutkod finns den lösning som jag skapat och i övningskod kan ni arbeta med er lösning.

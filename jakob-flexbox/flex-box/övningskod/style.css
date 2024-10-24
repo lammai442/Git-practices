@@ -1,0 +1,135 @@
+/* GLOBAL SETTINGS */
+:root {
+    --primary-bg-color: #333333;
+    --secondary-bg-color: #F4F4F4;
+    --box-primary-bg-color: #E6E6E6;
+    --box-color: #4CAF50;
+
+    /* COLOR UTILITIES */
+    .primary-bg-color {
+        background-color: var(--primary-bg-color);
+    }
+
+    .secondary-bg-color {
+        background-color: var(--secondary-bg-color);
+    }
+
+    .box-primary-bg-color {
+        background-color: var(--box-primary-bg-color);
+    }
+
+    .box-color {
+        background-color: var(--box-color);
+    }
+
+    .primary-text-color {
+        color: black;
+    }
+
+    .secondary-text-color {
+        color: white;
+    }
+}
+
+/* RESET SPACING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER-SECTION */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 1rem 3rem 1rem;
+
+    a {
+        margin: .5rem;
+        text-decoration: none;
+    }
+}
+
+/* MAIN-SECTION */
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+main {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    /* TOP MAIN-SECTION */
+    .flex-demo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* GREEN BOX CONTAINERS */
+        .flex-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            /* THREE GREEN BOXES */
+            .box {
+                display: flex;
+                flex-direction: row;
+                margin: 1rem;
+                padding: 1.2rem 15rem;
+            }
+        }
+    }
+    /* MIDDLE MAIN SECTION */
+    .form-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        h2 {
+            background-color: var(--secondary-bg-color);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap:0.7rem;
+
+            /* INPUT-SECTION */
+            input {
+                padding: .5rem;
+                border-radius: 10px;
+            }
+
+            /* SUBMIT-BUTTON */
+            button {
+                padding: .5rem;
+                border-radius: 10px;
+                border: none;
+                background-color: var(--primary-bg-color);
+                color: var(--secondary-bg-color);
+            }
+        }  
+    }
+    }
+    }
+}
+
+/* FOOTER-SECTION */
+footer {
+    back
+}
