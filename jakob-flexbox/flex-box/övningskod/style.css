@@ -28,6 +28,8 @@
 
     .secondary-text-color {
         color: white;
+        text-decoration: none;
+
     }
 }
 
@@ -55,9 +57,7 @@
 /* MAIN-SECTION */
 
 h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
     margin: 1rem;
 }
 
@@ -72,7 +72,7 @@ main {
     .flex-demo {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
         /* GREEN BOX CONTAINERS */
@@ -80,30 +80,35 @@ main {
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
 
             /* THREE GREEN BOXES */
             .box {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
                 margin: 1rem;
-                padding: 1.2rem 15rem;
+                padding: 1rem 1rem;
             }
         }
     }
     /* MIDDLE MAIN SECTION */
-    .form-section {
+    /* FORM-SECTION */
+    .form-section { 
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; 
         align-items: center;
-        padding: 2rem;
+        padding: 0rem 0rem 1rem 0rem;
 
         h2 {
+            width: 100%;
             background-color: var(--secondary-bg-color);
+            background: white;
+            padding: 1rem;
         }
-
+        /* INPUT-CONTAINER */
         form {
             display: flex;
             flex-direction: column;
@@ -122,14 +127,42 @@ main {
                 border: none;
                 background-color: var(--primary-bg-color);
                 color: var(--secondary-bg-color);
+                cursor: pointer;            
             }
+            
+            button:hover {
+                background-color: #575757;
+                transition: .3s ease-in-out;
+                }
         }  
     }
+
+    /* BOTTOM MAIN-SECTION */
+    /* ADDITIONAL FLEXBOX EXAMPLE */
+    .additional-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+           
+            .box {
+                text-align: center;
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
     }
-    }
-}
+
+
 
 /* FOOTER-SECTION */
-footer {
-    back
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    
+    .social-links a {
+        margin: 0.5rem;
+    }
 }
