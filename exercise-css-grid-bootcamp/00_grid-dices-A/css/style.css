@@ -15,11 +15,13 @@ body {
     border: 2px solid #222;
     border-radius: .5rem;
     margin: 1rem;
-    display: flex;
-    padding: 1rem;
+    gap: 0.3rem; 
+    display: grid;
     box-sizing: border-box;
 
     /* HÄR KODAR DU UPP DIN GRID */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .dice.faded {
@@ -28,132 +30,148 @@ body {
 
 .dice aside {
     background: #222;
+    width: 10px;
+    height: 10px;
     border-radius: 99rem;
     display: none;
 }
 
 .dice.dots-1 aside:nth-child(1) {
     display: block;
-
-    
+    grid-column: 3;
+    grid-row: 3;    
 }
 
 .dice.dots-2 aside:nth-child(1) {
     display: block;
-
-    
+    grid-column: 2;
+    grid-row: 2;  
 }
 
 .dice.dots-2 aside:nth-child(2) {
     display: block;
- 
-    
+    grid-column: 4;
+    grid-row: 4;     
 }
 
 .dice.dots-3 aside:nth-child(1) {
     display: block;
-
-    
+    grid-column: 2;
+    grid-row: 2;  
 }
 
 .dice.dots-3 aside:nth-child(2) {
     display: block;
-
-    
+    grid-column: 3;
+    grid-row: 3;  
 }
 
 .dice.dots-3 aside:nth-child(3) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 4;  
     
 }
 
 .dice.dots-4 aside:nth-child(1) {
     display: block;
-
-    
+    grid-column: 2;
+    grid-row: 2;  
 }
 
 .dice.dots-4 aside:nth-child(2) {
     display: block;
-
-    
+    grid-column: 4;
+    grid-row: 2;  
 }
 
 .dice.dots-4 aside:nth-child(3) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 4;  
     
 }
 
 .dice.dots-4 aside:nth-child(4) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 4;  
     
 }
 
 .dice.dots-5 aside:nth-child(1) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 2;  
     
 }
 
 .dice.dots-5 aside:nth-child(2) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 2;  
     
 }
 
 .dice.dots-5 aside:nth-child(3) {
     display: block;
-
+    grid-column: 3;
+    grid-row: 3;  
     
 }
 
 .dice.dots-5 aside:nth-child(4) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 4;  
     
 }
 
 .dice.dots-5 aside:nth-child(5) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 4;  
     
 }
 
 .dice.dots-6 aside:nth-child(1) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 2;  
     
 }
 
 .dice.dots-6 aside:nth-child(2) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 2;  
     
 }
 
 .dice.dots-6 aside:nth-child(3) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 3;  
     
 }
 
 .dice.dots-6 aside:nth-child(4) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 3;  
     
 }
 
 .dice.dots-6 aside:nth-child(5) {
     display: block;
-
+    grid-column: 2;
+    grid-row: 4;  
     
 }
 
 .dice.dots-6 aside:nth-child(6) {
     display: block;
-
+    grid-column: 4;
+    grid-row: 4;  
     
 }
