@@ -15,11 +15,13 @@ body {
     border: 2px solid #222;
     border-radius: .5rem;
     margin: 1rem;
-    display: flex;
-    padding: 1rem;
+    display: grid;
+    aspect-ratio: 1;
+    gap: 0.3rem;
 
     /* HÄR KODAR DU UPP DIN GRID */
-
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .dice.faded {
@@ -28,54 +30,91 @@ body {
 
 .dice aside {
     background: #222;
+    width: 10px;
+    aspect-ratio: 1;
     border-radius: 99rem;
 }
 
 .dice aside:nth-child(1) { 
-    
+    grid-area: one;
 }
 .dice aside:nth-child(2) {
-    
+    grid-area: two;
 }
 .dice aside:nth-child(3) {
-    
+    grid-area: three;
 }
 .dice aside:nth-child(4) {
-    
+    grid-area: four;
 }
 .dice aside:nth-child(5) {
-    
+    grid-area: five;
 }
 .dice aside:nth-child(6) {
-    
+    grid-area: six;
 }
 
 .dice.dots-1 {
-
+    grid-template-areas: 
+        '. . . . .'
+        '. . . . .'
+        '. . one . .'
+        '. . . . .'
+        '. . . . .'
+    ;
     
 }
 
 .dice.dots-2 {
-
+    grid-template-areas: 
+        '. . . . .'
+        '. one . . .'
+        '. . . . .'
+        '. . . two .'
+        '. . . . .'
+    ;
     
 }
 
 .dice.dots-3 {
-
-    
+    grid-template-areas: 
+        '. . . . .'
+        '. one . . .'
+        '. . two . .'
+        '. . . three .'
+        '. . . . .'
+    ;
 }
 
 .dice.dots-4 {
-
+    grid-template-areas: 
+        '. . . . .'
+        '. one . two .'
+        '. . . . .'
+        '. three . four .'
+        '. . . . .'
+    ;
     
 }
 
 .dice.dots-5 {
-
+    grid-template-areas: 
+        '. . . . .'
+        '. one . two .'
+        '. . three . .'
+        '. four . five .'
+        '. . . . .'
+    ;
     
 }
 
 .dice.dots-6 {
-
+    grid-template-areas: 
+        '. . . . .'
+        '. one . two .'
+        '. three . four .'
+        '. five . six .'
+        '. . . . .'
+    ;
     
 }
