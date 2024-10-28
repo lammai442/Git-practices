@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    gap: 1rem;
+}
+
+header {
+    background-color: aqua;
+    grid-column: auto / span 6; /* I 99 av 100 fall kan man ta bort auto och det fungerar likadant. */
+}
+
+main {
+    background-color: brown;
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+}
+
+aside {
+    background-color: beige;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
+
+footer {
+    background-color: green;
+    grid-column: auto / span 6;
+    grid-row: auto / span 2;
+}
