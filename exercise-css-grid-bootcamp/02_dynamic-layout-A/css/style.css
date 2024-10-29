@@ -40,7 +40,6 @@ header {
     /* Här behövs grid-grejjer */
     grid-column: auto / span 12;
     grid-row: auto / span 4;
-
 }
 
 
@@ -57,13 +56,12 @@ main {
 
 main article {
     width: 100%;
-    height: 12rem;
+    height: 100%;
     background: rgba(190, 190, 190, 1);
     margin: .25rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 aside {
