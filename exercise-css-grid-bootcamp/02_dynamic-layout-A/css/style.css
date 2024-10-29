@@ -31,7 +31,6 @@ body {
 }
 
 nav {
-
     /* Här behövs grid-grejjer */
     grid-column: auto / span 12;
     grid-row: auto / span 2;
@@ -73,24 +72,19 @@ aside {
 }
 
 section.col-4 {
-    height: 12rem;
-
     /* Här behövs grid-grejjer */
     grid-column: auto / span 4;
-    grid-row: auto / span 3;
+    grid-row: auto / span 4;
 }
 
 section.col-3 {
-    height: 12rem;
-
     /* Här behövs grid-grejjer */
     grid-column: auto / span 3;
-    grid-row: auto / span 3;
+    grid-row: auto / span 4;
 }
 
 footer {
-    height: 12rem;
-    
     /* Här behövs grid-grejjer */
-
+    grid-column: span 12;
+    grid-row: span 4;
 }
