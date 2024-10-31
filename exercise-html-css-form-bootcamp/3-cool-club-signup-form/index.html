@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 2 - Cool club signup form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="form-wrapper">
+        <header>
+            <h1>Cool Club</h1>
+        </header>
+        <form class="form-main">
+            <!-- TOP MAIN SECTION -->
+            <fieldset class="form-name">
+                <select class="form-title">
+                    <option value="">Title</option>
+                    <option value="mr">Mr</option>
+                    <option value="ms">MS</option>
+                </select>
+                <input type="text" class="input-first-name" placeholder="First name">
+                <input type="text" class="input-sur-name" placeholder="Last name">
+            </fieldset>
+            <hr>
+            
+            <!-- MIDDLE MAIN SECTION -->
+            <fieldset class="form-mail-phone">
+                <input type="email" class="input-email" placeholder="E-mail">
+                <input type="phone" class="input-phone" placeholder="Phone">
+                
+            </fieldset>
+            <hr>
+            <!-- BOTTOM MAIN SECTION -->
+            <fieldset class="form-password">
+                <input type="password" class="input-password " placeholder="Password" minlength="8" required>
+                <input type="password" class="input-repeat-password" placeholder="Repeat password" minlength="8" required>
+            </fieldset>        
+            <Button>Sign Up!</Button>
+        </form>
+    </div>
 </body>
 </html>

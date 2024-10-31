@@ -3,4 +3,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    fieldset {
+        border: none;
+    }
+}
+
+/* COLORS */
+
+:root {
+    --grey-bg-color: #EEEEEE;
+    --blue-bg-color: #010AFF;
+    --purple-bg-color: #BB02FF;
+}
+
+hr {
+    border: none; /* Tar bort standardlinjen */
+    height: 2px; /* Höjd på linjen */
+    background-color: var(--blue-bg-color); /* Sätter bakgrundsfärgen till blå */ 
+}
+
+
+
+
+body {
+    height: 100vh;
+    background-color: var(--grey-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* HEADER SECTION */
+header {
+    padding: 2rem;
+    background: linear-gradient(to right, var(--blue-bg-color) 55%, var(--purple-bg-color));
+
+    h1 {
+        color: white;
+    }
+}
+
+/* MAIN SECTION */
+
+.form-main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    /* TOP MAIN SECTION */
+    .form-name {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+        .form-title {
+            grid-column: auto /span 4;
+            width: 20%;
+        }
+
+        .input-first-name {
+            grid-column: auto /span 2;
+            width: 90%;
+        }
+
+        .input-sur-name {
+            grid-column: auto /span 2;
+            width: 100%;
+        }
+    }
+    
+    /* MIDDLE MAIN SECTION */
+    .form-mail-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 60%;
+    }
+
+    /* BOTTOM MAIN SECTION */
+    .form-password {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 60%;
+    }
+
+    button {
+        margin-top: 3rem;
+        padding: 0.5rem 1rem;
+        align-self: flex-end;
+        width: fit-content;
+        background-color: #9000C2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
 }
