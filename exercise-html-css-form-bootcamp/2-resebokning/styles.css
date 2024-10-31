@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    h1, h2, h3, p {
+    h1, h2, h3, p, button {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }
 
@@ -14,7 +14,7 @@
         font-size: 1rem;
     }
 
-    h3, p {
+    h3, p, label {
         font-size: 0.75rem;
         font-weight: 400;
     }
@@ -30,7 +30,7 @@
 body {
     height: 100vh;
     border: none;
-    background-color: grey;
+    background-color: #EEEEEE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ body {
 }
 
 .header-title {
-    grid-column: auto / span 2;
+
     text-align: center;
 
     h1 {
@@ -64,16 +64,17 @@ body {
 }
 
 .destinations {
-    grid-column: span 2;
     position:relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: col;
 
     .destination-sthlm {
         width: 100%;
-        grid-column: auto / span 1 ;
-        padding: 1rem;
+        grid-column: auto / span 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem 1rem;
         background-color: var(--darker-grey-bg-color);
     }
 
@@ -81,36 +82,33 @@ body {
         position: absolute;
         top: 50%; /* Vertikal centrering */
         left: 50%; /* Horisontell centrering */
-        transform: translate(-50%, -50%); /* Justera för exakt centrering */
-        background-color: transparent;
+        transform: translate(-50%, -50%);
     }
     
     .destination-gbg {
         width: 100%;
         grid-column: auto / span 1;
-        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
         background-color: var(--lighter-grey-bg-color);
     }
-    
-    }
+}
 
 .form {
     grid-column: auto / span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     padding: 1rem;
-
-    .form-choices {
-        padding: 1rem 0;
-    }
+    gap: 1rem;
 
     .form-input {
         select {
             width: 100%;
         }
-    }
-
-    
+    }    
 }
 
 .form-user-input {
@@ -123,4 +121,56 @@ body {
 /* CHANGE COLOR OF CHECKBOX/RADIO */
 input {
     accent-color: black;
+}
+
+.form-input {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.ny {
+    grid-column: span 2; /* Fyller hela raden */
+    grid-row: 3; /* Anger att den ska vara på rad 3 */
+    color: black;
+}
+
+.input-name {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+select {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.terms input {
+    background-color: red;
+}
+
+.terms {
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+
+    .checkbox {
+        cursor: pointer;
+    }
+}
+
+
+
+.button {
+    padding: 1rem 0rem;
+    font-size: 1.125rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
 }

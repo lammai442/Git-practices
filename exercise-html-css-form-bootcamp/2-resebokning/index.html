@@ -8,23 +8,28 @@
 </head>
 <body>
     <div class="form-wrapper">
-        <header class="header-title">
+        <header class="header-title span-two">
             <h1>ÅKA TÅG</h1>
         </header>
-        <div class="destinations">
-            <div class="destination-sthlm">
-                <h2>STOCKHOLM</h2>
-                <p>10.30</p>
+        <div class="destinations span-two">
+            <div class="destination-sthlm span-one">
+                <div>
+                    <h2>STOCKHOLM</h2>
+                    <p>10.30</p>
+                    
+                </div>
             </div>
             <div class="arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" color="#000000" fill="none">
-                    <path d="M3.99982 11.9998L19.9998 11.9998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M20.0001 11.9998L4.00012 11.9998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
-            <div class="destination-gbg">
-                <h2>GÖTEBORG</h2>
-                <p>14.45</p>
+            <div class="destination-gbg span-one">
+                <div>
+                    <h2>GÖTEBORG</h2>
+                    <p>14.45</p>
+                </div>
             </div>
         </div>
         <form class="form">
@@ -39,6 +44,7 @@
             <fieldset class="form-input">
                 <h3>Antal biljetter</h3>
                 <select>
+                    <option value="">-- Antal --</option>
                     <option value="one">1</option>
                     <option value="one">2</option>
                 </select>
@@ -46,18 +52,28 @@
             <fieldset class="form-input">
                 <h3>Titel</h3>
                 <select>
-                    <option value="">Ms.</option>
-                    <option value="one">1</option>
-                    <option value="one">1</option>
+                    <option value="">-- Mr/MS --</option>
+                    <option value="one">Mr</option>
+                    <option value="one">Ms</option>
+                </select>
             </fieldset>
-            
-            <!-- <fieldset class="form-user-input">
+            <div class="span-two">
                 <h3>Förnamn</h3>
-                <input type="text" class="input-first-name" placeholder="Greta">
+                <input type="text" class="input-name" placeholder="Greta">
+            </div>
+            <div class="span-two">
                 <h3>Efternamn</h3>
-                <input type="text" class="input-surname" placeholder="Greta">
-            </fieldset> -->
-
+                <input type="text" class="input-name" placeholder="Thunberg">
+            </div>
+            <div class="span-two">
+                <label class="terms">
+                    <input type="checkbox" class="checkbox" name="" id="">
+                    Godkänner villkoren
+                </label>
+            </div>
+            <button class="button span-two">Boka biljetter
+            </button>
+                
 
         </form>
         
