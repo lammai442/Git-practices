@@ -63,7 +63,11 @@ header {
 /* GIVES THE BORDER A STYLING WHEN PRESSED/FOCUSED */
 .form-input:focus, .form-title:focus {
     border: 2px solid var(--blue-bg-color);
-    outline: none; /* TAKES AWAY THE STANDARDLINE*/
+    outline: none; /* TAKES AWAY THE STANDARDLINE OTHERWISE THE NEW BORDER WONT SHOW*/
+}
+
+.form-input:focus:invalid {
+    border: 2px solid red;
 }
 
 .form-main {
