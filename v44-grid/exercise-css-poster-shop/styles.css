@@ -73,7 +73,8 @@ header {
 
     /* MENU ICON TOP LEFT */
     aside {
-        align-self: flex-start;        
+        align-self: flex-start;
+        transform: translateX();        
     }
 }
 
