@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #ffc800;
+    text-align: center;
 }
 
 .wrapper {
@@ -50,4 +52,32 @@ footer {
     height: 8rem;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section {
+        width: 25%;
+        gap: 0.5rem;
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    main {
+        width: 50%;
+        background-color: #C1C99A;
+        height: inherit;
+    }
+
+    aside {
+        width: 25%;
+        margin-top: 0;
+        height: inherit;
+    }
 }
