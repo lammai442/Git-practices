@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+    text-align: center;
 }
 
 .wrapper {
@@ -54,4 +56,20 @@ footer {
     height: 8rem;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    }
+    
+    section {
+        flex-direction: column;
+        height: 20rem;
+        width: 100%;
+    }
+
+    article {
+        margin: 0.5rem 0 0 0;
+    }
 }
