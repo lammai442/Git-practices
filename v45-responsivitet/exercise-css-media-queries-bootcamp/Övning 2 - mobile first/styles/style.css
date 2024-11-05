@@ -52,32 +52,20 @@ footer {
     margin-top: 0.5rem;
 }
 
+@media screen and (min-width: 750px) {
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));  
+    }
 
+    section {
+        flex-direction: row;
+        gap: 1rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    article {
+        height: 320px;
+    }
+}
 
 
 
