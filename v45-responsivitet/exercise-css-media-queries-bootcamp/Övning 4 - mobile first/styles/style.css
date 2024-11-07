@@ -99,6 +99,14 @@ footer {
         border-radius: 14px;
     }
 
+    footer {
+        margin-top: 0;
+    }
     
-    
+}
+
+@media screen and (min-width: 550px) {
+    button {
+        min-width: 40%;
+    }
 }
