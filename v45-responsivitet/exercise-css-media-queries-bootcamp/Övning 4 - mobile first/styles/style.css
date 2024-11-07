@@ -29,7 +29,7 @@ figure {
     height: 6rem;
     aspect-ratio: 1;
     background-color: #480063;
-    border-radius: 50%;
+    border-radius: 50%;    
 }
 
 section {
@@ -62,4 +62,43 @@ footer {
     height: 8rem;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+    
+    .content-wrapper {
+        padding: 2rem 1rem;
+        gap: 3rem;
+    }
+    
+    figure {
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        gap: 1rem;
+    }
+
+    section > article {
+        margin-bottom: 0;
+    }
+    
+    section > article:nth-child(1) {
+        background-color: #B2008A;
+    }
+
+    section > article:nth-child(2) {
+        background-color: #FD96A9;
+    }
+
+    button {
+        min-width: 30%;
+        border-radius: 14px;
+    }
+
+    
+    
 }
