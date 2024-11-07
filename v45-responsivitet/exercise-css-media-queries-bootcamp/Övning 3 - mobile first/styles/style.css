@@ -105,7 +105,23 @@ footer {
     
     .main-container {
         flex-direction: row;
+        gap: 1rem;
+        padding: 2rem 5rem;
     }
 
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        flex: 6; /* TAKES UP 60% OF THE WIDTH IN MAIN*/
+    }
 
+    
+    main > article {
+        height: 100%; 
+    }
+
+    aside {
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        flex: 4; /* TAKES UP 40% OF THE WIDTH IN MAIN */
+    }
 }
