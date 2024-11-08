@@ -6,27 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     
-    <!-- NYCKEL FRÅN FONTAWESOME FÖR ATT FÅ IN IKONER -->
-    <script src="https://kit.fontawesome.com/f300007e95.js" crossorigin="anonymous"></script>
+    <!-- NYCKEL FRÅN FONTAWESOME FÖR ATT FÅ IN IKONER OCH FÅR TILLGÅNG TILL ALLA DERAS IKONER -->
+    <script src="https://kit.fontawesome.com/25e208ea15.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header class="header">
-
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-list-item">Home</li>
                 <li class="navigation-list-item">About</li>
                 <li class="navigation-list-item">Contact</li>
-                <li class="navigation-list-item">Product<i class="fa-solid fa-chevron-down" style="color: #fff"></i>
-                    <i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
-                </li>
+                <!-- DENNA HAR EN TILL KLASS DÅ DEN OCKSÅ INVOLVERAS MED DROPDOWN MENYN -->
+                <li class="navigation-list-item dropdown-item">
+                    Products
+                    <!-- DROPDOWN PIL NERÅT -->
+                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
                     <ul class="navigation-dropdown">
-                        <li class="dropdown-item">Sweater</li>
+                        <li class="dropdown-item">Sweaters</li>
                         <li class="dropdown-item">Hoodies</li>
                         <li class="dropdown-item">Jackets</li>
                         <li class="dropdown-item">Jeans</li>
                     </ul>
+                </li>
             </ul>
         </nav>
     </header>
