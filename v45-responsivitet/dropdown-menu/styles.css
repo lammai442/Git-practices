@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    min-width: 100vh;
     background-color: #f7eded;
 }
 
@@ -16,12 +16,13 @@ body {
     background-color: cadetblue;
 }
 
+/* DENNA BLIR WRAPPERN PÅ SIDAN */
 .navigation {
-    max-width: 1000px;
-    margin-inline: auto;
+    max-width: 1000px; /* SKAPAR BREDDEN PÅ WRAPPERN */
+    margin-inline: auto; /* GÖR SÅ ATT DEN CENTRERAR INNEHÅLLET TILL MITTEN */
     color: white;
     font-size: 1.5rem;
-    font-size: 600;
+    font-weight: 600; 
 }
 
 .navigation-list {
@@ -32,50 +33,47 @@ body {
 
 .navigation-list-item {
     text-align: center;
-    list-style-type: none;
+    width: 200px; /* GER EN FIXERAD BREDD SÅ ATT ALLA HAR SAMMA BREDD ISTÄLLET FÖR ATT DET ÄR INNEHÅLLET SOM STYR BREDDEN, UTGÅ FRÅN DEN SOM HAR STÖRST */
+    list-style-type: none; /* TAR BORT PUNKTERNA FRÅN LISTAN */
     padding: 1.5rem 0;
-    cursor: pointer;
-    width: 200px;
+    cursor: pointer; /* DÅ DESSA INTE ÄR A-TAGGAR SÅ FÅR DE INTE EN LÄNKIKON OCH DÅ FÅR VI LÄGGA IN DENNA SÅ ATT DET SER UT SOM DET */
 }
 
+/* GÖR SÅ ATT DEN FÅR EN ANNAN BAKGRUNDSFÄRG NÄR VI HOOVRAR */
 .navigation-list-item:hover {
-    background-color: rgb(79, 130, 132);
+    background-color: rgb(73, 121, 122);
+}
+
+/* GÖR SÅ ATT DET BLIR ETT LITET GAP MELLAN TEXTEN OCH IKONEN */
+.navigation-list-item > i {
+    margin-left: .5rem;
 }
 
 .dropdown-item {
-    position: relative;
+    position: relative; /* GÖR SÅ ATT DENNA ÄR FÖRÄLDER TILL POSITION:ABSOLUTE */   
 }
 
 .navigation-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
+    display: none; /* GÖMMER DEN I DEAFAULT TILLS DEN BLIR AKTIV MED HOOVER */
+    position: absolute; /* GÖR SÅ ATT DEN HOPPAR UR SIN POSITION FRÅN SIN FÖRÄLDER .dropdown-item */
+    left: 0; /* GÖR SÅ ATT HELA .dropdown-item FLYTTAR TILL VÄNSTER OCH ALIGNAR MED PRODUCTS */
+    top: 100%; /* GÖR SÅ ATT HELA .dropdown-item UNDER PRODUCTS */
 }
 
 .dropdown-item {
     text-align: center;
-    width: 200px;
-    background-color: hotpink;
+    width: 200px; /* SKAPAR SAMMA WIDTH SOM I PRODUCTS SÅ ATT DE MATCHAR */
+    background-color: cadetblue;
+    padding: 1.5rem 0; /* SAMMA PADDING SOM I FÖRÄLDERN SOM ÄR I .navigation-list-item */
     list-style-type: none;
-    padding: 1.5rem 0;
 }
 
-/* DET FÖRSTA KLASSEN TRICKAR EFTERFÖLJANDE KLASS */
+/* GENOM ATT HA FÖRST HOVER SÅ KOMMER DEN ATT TRIGGA IGÅNG NÄSTA CLASS SOM STÅR EFTERÅT */
 .dropdown-item:hover .navigation-dropdown {
-    display: block;
+    display: block; /* TAR FRAM DEN NÄR MAN HOVRAR */
 }
 
-.dropdown-item:hover .arrow-up {
-    display: none;
+/* GENOM ATT HA FÖRST HOVER SÅ KOMMER DEN ATT TRIGGA IGÅNG NÄSTA CLASS SOM STÅR EFTERÅT */
+.dropdown-item:hover .fa-solid {
+    transform: rotate(180deg) /* GÖR SÅ ATT PILER ROTERAR 180GRADER */
 }
-
-.dropdown-item:hover .arrow-down {
-    display: block;
-}
-
-.arrow-up {
-    display: none;
-}
-
-
