@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="header__title">Order</h1>
+        </header>
+
+        <!-- ORDER SECTION -->
+        <section class="order-summary">
+            <section class="order-grid order-grid--large">
+                <section class="order-grid__box order-grid__box--full-span order-grid__box--text-left">
+                    <h2 class="event__artist event__artist--smaller">Lasse-Stefanz</h2>
+                    <p class="event__time event__time--smaller">
+                        <time>21 mars</time>
+                        kl 
+                        <time datetime="19:00">19.00</time>
+                        - 
+                        <time datetime="21:00">21.00</time>
+                    </p>
+                </section>
+                <button class="order-grid__box order-grid__box--button">-</button>
+                <section class="order-grid__box order-grid__box--wider">3</section>
+                <button class="order-grid__box order-grid__box--button">+</button>
+            </section>
+            
+            <section class="order-grid order-grid--large">
+                <section class="order-grid__box order-grid__box--full-span order-grid__box--text-left">
+                    <h2 class="event__artist event__artist--smaller">Pelle trubadur</h2>
+                    <p class="event__time event__time--smaller">
+                        <time>29 mars</time>
+                        kl 
+                        <time datetime="22:00">22.00</time>
+                        - 
+                        <time datetime="00:00">00.00</time>
+                    </p>
+                </section>
+                <button class="order-grid__box order-grid__box--button">-</button>
+                <section class="order-grid__box order-grid__box--wider">2</section>
+                <button class="order-grid__box order-grid__box--button">+</button>
+            </section>
+            
+            <section class="order-grid order-grid--large">
+                <section class="order-grid__box order-grid__box--full-span order-grid__box--text-left">
+                    <h2 class="event__artist event__artist--smaller">Klubb Untz</h2>
+                    <p class="event__time event__time--smaller">
+                        <time>17 april</time>
+                        kl 
+                        <time datetime="22:00">22.00</time>
+                        - 
+                        <time datetime="00:00">00.00</time>
+                    </p>
+                </section>
+                <button class="order-grid__box order-grid__box--button">-</button>
+                <section class="order-grid__box order-grid__box--wider">1</section>
+                <button class="order-grid__box order-grid__box--button">+</button>
+            </section>
+        </section>
+            
+            <!-- ORDER SUMMARY -->
+        <section class="price-summary">
+            <p class="description">Totalt värde på order</p>
+            <h2 class="price">1310 sek</h2>
+        </section>
+            
+        <!-- BUTTON -->
+        <button class="button">
+            <a href="confirmed-order.html" class="button__link">Skicka order</a>
+        </button>
+
+    </div>
+</body>
+</html>

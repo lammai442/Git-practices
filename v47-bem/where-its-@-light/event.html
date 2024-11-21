@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="wrapper">
         
+        <!-- HEADER -->
         <header class="header">
             <h1 class="header__title">Event</h1>
-            <p class="header__paragraph">You are about to score some tickets to</p>
+            <p class="description">You are about to score<br>some tickets to</p>
         </header>
 
         <section class="event">
-            <h2>Lasse-Stefanz</h2>
+            <h2 class="event__artist">Lasse-Stefanz</h2>
             <p class="event__time">
-                <time datetime="21 mars"> 21 mars</time>
+                <time>21 mars</time>
                  kl 
                 <time datetime="19:00">19.00</time>
                  - 
-                 <time datetime="21:00">21.00</time>
+                <time datetime="21:00">21.00</time>
             </p>
             <h3 class="event__place">@ Kjell Härnqvistsalen</h3>
         </section>
 
+        <!-- ORDER -->
         <section class="order-grid">
-            <section class="order-grid__box order-grid__box--full-span">1050 sek</section>
-            <section class="">-</section>
-            <section class="order-grid">3</section>
-            <section>+</section>
+            <section class="order-grid__box order-grid__box--full-span">
+                <h2 class="price">1050 sek</h2>
+            </section>
+            <button class="order-grid__box order-grid__box--button">-</button>
+            <section class="order-grid__box order-grid__box--wider">3</section>
+            <button class="order-grid__box order-grid__box--button">+</button>
         </section>
 
-        <button class="button">Lägg i varukorgen</button>
+        <!-- BUTTON -->
+        <button class="button">
+            <a href="order.html" class="button__link">Lägg i varukorgen</a>
+        </button>
 
     </div>
 </body>
