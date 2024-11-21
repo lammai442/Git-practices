@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+
+
+/* GENERIC UTILITIES */
+:root {
+    --primary-bg-color: #231F42;
+    --lowest-opacity-bg-color: rgba(255, 255, 255, 0.1);
+    --gradient-bg-color: #231F42;
+    
+    --primary-text-color: #F56B9A;
+    --secondary-text-color: #37AEAB;
+    --time-text-color: #D0D0D0;  
+    --lower-opacity-text-color: rgba(255, 255, 255, 0.8);
+
+    --primary-font-family: 'Lato';
+}
+
 /* FONTS */
 /* SANSITA */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
@@ -12,18 +28,7 @@
 /* OPENS SANS */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* GENERIC UTILITIES */
-:root {
-    --primary-bg-color: #231F42;
-    --lowest-opacity-bg-color: rgba(255, 255, 255, 0.1);
-    
-    --primary-text-color: #F56B9A;
-    --secondary-text-color: #37AEAB;
-    --time-text-color: #D0D0D0;  
-    --lower-opacity-text-color: rgba(255, 255, 255, 0.8);
-
-    --primary-font-fam: "Sansita";
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 body {
@@ -39,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .header {
@@ -58,17 +63,20 @@ body {
 /* HEADER */
 .header__search-bar {
     display: flex;
+    position: relative;
 }
 
 .header__search-icon {
-    margin-left: .5rem;
+    position: absolute;
+    align-self: center;
+    left: 5%;
     width: 5%;
-    background-color: var(--lowest-opacity-bg-color);
+
 }
 
 .header__search-input  {
     width: 100%;
-    padding: .5rem;
+    padding: 1rem 0 1rem 2.5rem;
     background-color: var(--lowest-opacity-bg-color);
     border: none;
     color:white;
@@ -78,6 +86,7 @@ body {
 .calendar {
     display: flex;
     flex-direction: column;
+    gap: .8rem;
 }
 
 .calendar__event {
@@ -97,6 +106,8 @@ body {
 }
 
 .calendar__date {
+    height: 2rem;
+    width: 2rem;
     color: white;
     text-align: center;
     font-size: .8rem;
@@ -131,9 +142,19 @@ body {
     color: var(--secondary-text-color);
 }
 
+/* PAGINATION */
+.pagination {
+    width: 100%;
+}
+
+.pagination__box {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
 .pagination__dot {
-    width: 50%;
-    height: 50%;
+    padding: .3rem;
+    aspect-ratio: 1;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
@@ -145,6 +166,10 @@ body {
 
 /* PAGE - EVENT*/
 /* HEADER */
+
+.wrapper--align-center {
+    align-items: center;
+}
 .description {
     text-align: center;
     font-size: 1.2rem;
@@ -167,7 +192,7 @@ body {
 
 .event__place {
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .order-grid {
@@ -201,6 +226,7 @@ body {
 
 .price {
     font-size: 2rem;
+    font-weight: 900;
     color: white;
 }
 
@@ -246,6 +272,7 @@ body {
 
 .event__artist--smaller {
     font-size: 1.5rem;
+    font-family: var(--primary-font-family);
 }
 
 .event__time--smaller {
@@ -261,10 +288,11 @@ body {
 
 /* PAGE CONFIRMED ORDER */
 .wrapper--middle {
-    margin-top: 4rem;
+    background-image: linear-gradient(to top, #231f42 10%,#f36a9a 90%);
 }
 
 .ticket {
+    margin-top: 5rem;
     width: 100%;
     background-color: white;
     border-radius: 4px;
@@ -272,9 +300,13 @@ body {
 
 .ticket__box {
     padding:1rem 0rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
 }
 
 .ticket__box--opacity-3 {
+    border-top: 2px dotted black;
     background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -296,13 +328,16 @@ body {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.event__place {
-    font-size: 1.2rem;
-    color: black;
-}
-
 .ticket__small-box {
     flex: 1;
+    border-top: 2px dotted black;
+    border-right: 2px dotted black;
+    border-bottom: 2px dotted black;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.ticket__small-box:nth-child(3) {
+    border-right: none;
 }
 
 .event-location {
@@ -313,8 +348,16 @@ body {
 
 .ticket__box--opacity-12 {
     background-color: rgba(0, 0, 0, 0.12);
+    align-items: center;
+}
+
+.ticket__box--center {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 0;
+    gap:.5rem;
 }
 
 .ticket__scanner-text {
-    
+    color: rgba(0, 0, 0, 0.4)
 }
