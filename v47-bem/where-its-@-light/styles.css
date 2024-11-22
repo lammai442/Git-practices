@@ -11,24 +11,19 @@
 :root {
     --primary-bg-color: #231F42;
     --lowest-opacity-bg-color: rgba(255, 255, 255, 0.1);
-    --gradient-bg-color: #231F42;
+    --gradient-bg-color: linear-gradient(to top, #231f42 10%, #f36a9a 90%);
     
     --primary-text-color: #F56B9A;
     --secondary-text-color: #37AEAB;
     --time-text-color: #D0D0D0;  
     --lower-opacity-text-color: rgba(255, 255, 255, 0.8);
 
-    --primary-font-family: 'Lato';
+    --primary-font-family: "Roboto";
 }
 
 /* FONTS */
 /* SANSITA */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
-
-/* OPENS SANS */
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Sansita:wght@400;700;800;900&display=swap');
 
 
 body {
@@ -61,12 +56,12 @@ body {
 
 /* PAGE - LANDING PAGE */
 /* HEADER */
-.header__search-bar {
+.search-bar {
     display: flex;
     position: relative;
 }
 
-.header__search-icon {
+.search-bar__icon {
     position: absolute;
     align-self: center;
     left: 5%;
@@ -74,7 +69,7 @@ body {
 
 }
 
-.header__search-input  {
+.search-bar__input {
     width: 100%;
     padding: 1rem 0 1rem 2.5rem;
     background-color: var(--lowest-opacity-bg-color);
@@ -96,20 +91,11 @@ body {
     gap: 1.5rem;
 }
 
-.calendar__date-box {
-    display: flex;
-    flex-direction: row;    
-    justify-content: center;
-    align-items: center;
+.calendar__date {
+    text-align: center;  
     padding: 1rem;
     border: 2px solid white;
-}
-
-.calendar__date {
-    height: 2rem;
-    width: 2rem;
     color: white;
-    text-align: center;
     font-size: .8rem;
 }
 
@@ -288,7 +274,7 @@ body {
 
 /* PAGE CONFIRMED ORDER */
 .wrapper--middle {
-    background-image: linear-gradient(to top, #231f42 10%,#f36a9a 90%);
+    background: var(--gradient-bg-color);
 }
 
 .ticket {
@@ -299,7 +285,7 @@ body {
 }
 
 .ticket__box {
-    padding:1rem 0rem 1rem 1.5rem;
+    padding:1rem 0 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap:.8rem;
