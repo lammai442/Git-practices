@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Verifiera order</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header__title">Order</h1>
+        </header>
+        
+        <!-- Lasse-Stefanz -->
+        <!-- Återanvänder grid-section, bara nu med tre kolumner istället -->
+        <!-- Kolumnerna är satta som 1fr, 2fr, 1fr. Detta innebär att den mittersta kolumnen är bredare än de två yttersta -->
+        <section class="grid-section grid-section--three-columns grid-section--full-borders">
+
+            <!-- Titeln och datumet får nu span 3 för att täcka alla tre kolumner -->
+            <h2 class="grid-section__title grid-section__title--span-3">Lasse-Stefanz</h2>
+            <p class="grid-section__date grid-section__date--span-3"><time datetime="2025-03-21">21 mars</time> kl <time datetime="19:00">19.00</time> - <time datetime="21:00">21.00</time></p>
+            
+            <!-- Knapparna och antalet biljetter har span 1 och förhåller sig därför till gridens storleksförhållande 1fr, 2fr, 1fr -->
+            <button class="grid-section__btn">-</button>
+            <p class="grid-section__count">3</p>
+            <button class="grid-section__btn">+</button>
+        </section>
+        
+        <!-- Pelle trubadur -->
+        <!-- Återanvänder grid-section, bara nu med tre kolumner istället -->
+        <!-- Kolumnerna är satta som 1fr, 2fr, 1fr. Detta innebär att den mittersta kolumnen är bredare än de två yttersta -->
+        <section class="grid-section grid-section--three-columns grid-section--full-borders">
+
+            <!-- Titeln och datumet får nu span 3 för att täcka alla tre kolumner -->
+            <h2 class="grid-section__title grid-section__title--span-3">Pelle trubadur</h2>
+            <p class="grid-section__date grid-section__date--span-3"><time datetime="2025-03-29">29 mars</time> kl <time datetime="22:00">22.00</time> - <time datetime="00:00">00.00</time></p>
+            
+            <!-- Knapparna och antalet biljetter har span 1 och förhåller sig därför till gridens storleksförhållande 1fr, 2fr, 1fr -->
+            <button class="grid-section__btn">-</button>
+            <p class="grid-section__count">2</p>
+            <button class="grid-section__btn">+</button>
+        </section>
+        
+        <!-- Klubb Untz -->
+        <!-- Återanvänder grid-section, bara nu med tre kolumner istället -->
+        <!-- Kolumnerna är satta som 1fr, 2fr, 1fr. Detta innebär att den mittersta kolumnen är bredare än de två yttersta -->
+        <section class="grid-section grid-section--three-columns grid-section--full-borders">
+
+            <!-- Titeln och datumet får nu span 3 för att täcka alla tre kolumner -->
+            <h2 class="grid-section__title grid-section__title--span-3">Klubb Untz</h2>
+            <p class="grid-section__date grid-section__date--span-3"><time datetime="2025-04-17">17 april</time> kl <time datetime="22:00">22.00</time> - du tröttnar</p>
+            
+            <!-- Knapparna och antalet biljetter har span 1 och förhåller sig därför till gridens storleksförhållande 1fr, 2fr, 1fr -->
+            <button class="grid-section__btn">-</button>
+            <p class="grid-section__count">1</p>
+            <button class="grid-section__btn">+</button>
+        </section>
+        
+        <h2 class="sub-title">Totalt värde på order</h2>
+        <p class="currency currency--white currency--font-size currency--align-center">1310 sek</p>
+        <button class="button">Skicka order</button>
+    </div>
+</body>
+</html>

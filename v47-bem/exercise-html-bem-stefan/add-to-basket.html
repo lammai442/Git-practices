@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Lägg till event</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header__title">Event</h1>
+        </header>
+        <h2 class="sub-title">You are about to score some tickets to</h2>
+        
+        <!-- Lasse-Stefanz -->
+        <!-- grid-section har två kolumner -->
+        <!-- Återanvänder grid-section bara för att jag redan har elementklasserna __title, __date och __sub-title -->
+        <!-- Kanske inte det bästa exemplet att använda detta till men det ska fungera i teorin -->
+        <article class="grid-section grid-section--align-center">
+            
+            <!-- Titlarna och datumet har span två för att täcka båda kolumnerna -->
+            <h2 class="grid-section__title">Lasse-Stefanz</h2>
+            <p class="grid-section__date grid-section__date--span"><time datetime="2025-03-21">21 mars</time> kl <time datetime="19:00">19.00</time> - <time datetime="21:00">21.00</time></p>
+            <h3 class="grid-section__sub-title">@ Kjell Härnqvistsalen</h3>
+        </article>
+        
+        <!-- Pris och antal -->
+        <!-- Återanvänder grid-section, bara nu med tre kolumner istället -->
+        <!-- Kolumnerna är satta som 1fr, 2fr, 1fr. Detta innebär att den mittersta kolumnen är bredare än de två yttersta -->
+        <section class="grid-section grid-section--three-columns grid-section--full-borders grid-section--align-center">
+            
+            <!-- Priset har span 3 och täcker därmed alla tre kolumner -->
+            <!-- Klassen currency är inte en del av grid-section då jag vill senare kunna använda det utanför blocket -->
+            <p class="currency currency--white currency--span-3 currency--font-size currency--align-center">1050 sek</p>
+            
+            <!-- Knapparna och antalet biljetter har span 1 och förhåller sig därför till gridens storleksförhållande 1fr, 2fr, 1fr -->
+            <button class="grid-section__btn">-</button>
+            <p class="grid-section__count">3</p>
+            <button class="grid-section__btn">+</button>
+        </section>
+        
+        <!-- Lägg i varukorg -->
+        <!-- Knappen är den enda design av "vanliga" knappar så den får klassen button -->
+        <button class="button">Lägg i varukorgen</button>
+    </div>
+</body>
+</html>

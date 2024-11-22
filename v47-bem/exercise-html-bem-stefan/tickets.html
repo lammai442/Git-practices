@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Dina biljetter</title>
+</head>
+<body>
+    <div class="wrapper"> 
+        
+        <!-- Hela biljetten  -->
+        <!-- ticket-grid har tre lika stora kolumner -->
+        <!-- Använder nu ett nytt block för grid -->
+        <main class="ticket-grid">
+            
+            <!-- Vem som spelar -->
+            <!-- ticket-grid__large-box har span 3 -->
+            <header class="ticket-grid__large-box">
+                <p class="ticket-grid__description">WHAT</p>
+                <h1 class="ticket-grid__title">Lase-Stefanz</h1>
+            </header>
+            
+            <!-- Vart det spelas -->
+            <!-- ticket-grid__large-box har span 3 -->
+            <!-- har opacity-9 på den gråa bakgrundsfärgen-->
+            <section class="ticket-grid__large-box ticket-grid__large-box--opacity-3">
+                <p class="ticket-grid__description">WHERE</p>
+                <h2 class="ticket-grid__sub-title">Kjell Härnqvistsalen</h2>
+                <h3 class="ticket-grid__info">Göteborgs universitet, Pedagogen, hus A</h3>
+            </section>
+            
+            <!-- Dag när det spelas -->
+            <!-- ticket-grid__small-box har span 1 -->
+            <section class="ticket-grid__small-box">
+                <p class="ticket-grid__description">WHEN</p>
+                <time class="ticket-grid__date" datetime="2025-03-21">21 Mar</time>
+            </section>
+            
+            <!-- Tid när det startar -->
+            <!-- ticket-grid__small-box har span 1 -->
+            <section class="ticket-grid__small-box">
+                <p class="ticket-grid__description">FROM</p>
+                <time class="ticket-grid__date" datetime="19:00">19.00</time>
+            </section>
+            
+            <!-- Tid när det slutar -->
+            <!-- ticket-grid__small-box har span 1 -->
+            <section class="ticket-grid__small-box">
+                <p class="ticket-grid__description">TO</p>
+                <time class="ticket-grid__date" datetime="21:00">21.00</time>
+            </section>
+            
+            <!-- Info vilket säte i salen -->
+            <!-- ticket-grid__large-box har span 3 -->
+            <!-- har opacity-9 på den gråa bakgrundsfärgen-->
+            <section class="ticket-grid__large-box ticket-grid__large-box--opacity-9">
+                <p class="ticket-grid__description">INFO</p>
+                <h3 class="ticket-grid__info">Section C - seat 233, bring umbrella</h3>
+            </section>
+            
+            <!-- Streckkoden, stor låda, span 3 -->
+            <!-- ticket-grid__large-box har span 3 -->
+            <!-- har opacity-12 på den gråa bakgrundsfärgen-->
+            <footer class="ticket-grid__large-box ticket-grid__large-box--align-center ticket-grid__large-box--opacity-12">
+                <img class="ticket-grid__image" src="" alt="streckkod">
+                <p class="ticket-grid__description ticket-grid__description--bigger-font"></p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

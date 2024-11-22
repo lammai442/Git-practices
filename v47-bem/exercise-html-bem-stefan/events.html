@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Events</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!-- Innehåller bara titeln Events och sökfältet -->
+        <!-- Sökfältet har ett search-element för att semantiskt visa att detta är ett sökområde -->
+        <!-- search är ny sedan oktober 2023 så den kanske inte används överallt ännu -->
+        <header class="header">
+            <h1 class="header__title">Events</h1>
+            <search class="header__search">
+                <input class="header__search-field" type="search">
+            </search>
+        </header>
+        
+        
+        <!-- event är en container för huvudinnehållet -->
+        <main class="event">
+            
+            <!-- Lasse-Stefanz, Kjell Härnqvistsalen -->
+            <!-- event__grid har två kolumner; en för datumet och en för vem som spelare-->
+            <article class="event__grid">
+                <time class="event__date" datetime="2025-03-21">21 MAR</time>
+                
+                <!-- grid-section har två kolumner -->
+                <!-- Titlarna har span två för att täcka båda kolumnerna medan tiden och kostnaden har span ett -->
+                <!-- grid-section är den klass som återanvänds mest i på hemsidan -->
+                <section class="grid-section grid-section--underline">
+                    <h2 class="grid-section__title">Lasse-Stefanz</h2>
+                    <h3 class="grid-section__sub-title">Kjell Härnqvistsalen</h3>
+                    <p class="grid-section__date"><time datetime="19:00">19.00</time> - <time datetime="21:00">21.00</time></p>
+                    <p class="currency">350 sek</p>
+                </section>
+            </article>
+            
+            <!-- Pelle trubadur, Pubelipuben -->
+            <!-- event__grid har två kolumner; en för datumet och en för vem som spelare-->
+            <article class="event__grid">
+                <time class="event__date" datetime="2025-03-29">29 MAR</time>
+                
+                <!-- grid-section har två kolumner -->
+                <!-- Titlarna har span två för att täcka båda kolumnerna medan tiden och kostnaden har span ett -->
+                <section class="grid-section grid-section--underline">
+                    <h2 class="grid-section__title">Pelle trubadur</h2>
+                    <h3 class="grid-section__sub-title">Pubelipuben</h3>
+                    <p class="grid-section__date"><time datetime="22:00">22.00</time> - <time datetime="00:00">00.00</time></p>
+                    <p class="currency">110 sek</p>
+                </section>
+            </article>
+            
+            <!-- Kajsas kör, Götaplatsen -->
+            <!-- event__grid har två kolumner; en för datumet och en för vem som spelare-->
+            <article class="event__grid">
+                <time class="event__date" datetime="2025-04-10">10 APR</time>
+                
+                <!-- grid-section har två kolumner -->
+                <section class="grid-section grid-section--underline">
+
+                    <!-- Titlarna har span två för att täcka båda kolumnerna -->
+                    <h2 class="grid-section__title">Kajsas kör</h2>
+                    <h3 class="grid-section__sub-title">Götaplatsen</h3>
+                    
+                    <!-- grid-section__date har span ett -->
+                    <p class="grid-section__date"><time datetime="15:00">15.00</time> - <time datetime="16:00">16.00</time></p>
+
+                    <!-- currency har span 1 -->
+                    <!-- Klassen currency är inte en del av grid-section då jag vill senare kunna använda det utanför blocket -->
+                    <p class="currency">99 sek</p>
+                </section>
+            </article>
+            
+            <!-- Klubb Untz, Din favoritkällare -->
+            <!-- event__grid har två kolumner; en för datumet och en för vem som spelare-->
+            <article class="event__grid">
+                <time class="event__date" datetime="2025-04-17">17 MAR</time>
+                
+                <!-- grid-section har två kolumner -->
+                <!-- Titlarna har span två för att täcka båda kolumnerna medan tiden och kostnaden har span ett -->
+                <section class="grid-section grid-section--underline">
+                    <h2 class="grid-section__title">Klubb Untz</h2>
+                    <h3 class="grid-section__sub-title">Kjell Härnqvistsalen</h3>
+                    <p class="grid-section__date"><time datetime="22:00">22.00</time> - du tröttnar</p>
+                    <p class="currency">150 sek</p>
+                </section>
+            </article>
+        </main>
+        
+        <!-- Innehåller de tre "prickarna" på botten av sidan -->
+        <footer class="pagination">
+            <a class="pagination__dot pagination__dot--white" href=""></a>
+            <a class="pagination__dot" href=""></a>
+            <a class="pagination__dot" href=""></a>
+        </footer>
+    </div>
+</body>
+</html>
